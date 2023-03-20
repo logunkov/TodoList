@@ -5,58 +5,55 @@
 //  Created by Constantin on 18.02.2023.
 //
 
-/// Presents a list of tasks sorted by priority.
+/// Предоставляет список заданий, отсортированных по приоритету.
 final class OrderedTaskManager: ITaskManager {
-	
-	private let taskManager: ITaskManager
-	
-	/// Create OrderedTaskManager.
-	/// - Parameter taskManager: ITaskManager
+
+	let taskManager: ITaskManager
+
 	init(taskManager: ITaskManager) {
-		
 		self.taskManager = taskManager
 	}
-	
-	/// Get all tasksю
-	/// - Returns: [Task]
-	public func allTasks() -> [Task] {
-		
+
+	/// Список всех заданий.
+	/// - Returns: Массив заданий.
+	func allTasks() -> [Task] {
 		sorted(tasks: taskManager.allTasks())
 	}
-	
-	/// Get all copleted tasks.
-	/// - Returns: [Task]
-	public func completedTasks() -> [Task] {
-		
+
+	/// Список выполненных заданий.
+	/// - Returns: Массив заданий.
+	func completedTasks() -> [Task] {
 		sorted(tasks: taskManager.completedTasks())
 	}
-	
-	/// Get all uncopleted tasks.
-	/// - Returns: [Task]
-	public func uncompletedTasks() -> [Task] {
-		
+
+	/// Список заданий для выполнения.
+	/// - Returns: Массив заданий.
+	func uncompletedTasks() -> [Task] {
 		sorted(tasks: taskManager.uncompletedTasks())
 	}
-	
-	/// Add task.
-	/// - Parameter tasks: [Task]
-	public func addTasks(tasks: [Task]) {
-		
+
+	/// Добавление перечня заданий.
+	/// - Parameter task: Задание.
+	func addTask(task: Task) {
+		taskManager.addTask(task: task)
+	}
+
+	/// Добавление перечня заданий.
+	/// - Parameter tasks: Массив заданий.
+	func addTasks(tasks: [Task]) {
 		taskManager.addTasks(tasks: tasks)
 	}
-	
+
 	private func sorted(tasks: [Task]) -> [Task] {
-		
 		tasks.sorted {
-			
 			if $0 is RegularTask, $1 is ImportantTask {
 				return false
 			}
-			
+
 			if let task0 = $0 as? ImportantTask, let task1 = $1 as? ImportantTask {
-				return task0.priority.rawValue > task1.priority.rawValue
+				return task0.taskPriority.rawValue > task1.taskPriority.rawValue
 			}
-		
+
 			return true
 		}
 	}
