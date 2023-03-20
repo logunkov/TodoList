@@ -5,37 +5,36 @@
 //  Created by Constantin on 15.02.2023.
 //
 
-/// IRepository
+/// Протокол для TaskRepositoryStub.
 protocol ITaskRepository {
-	
-	func getAll() -> [Task]
+
+	func getTasks() -> [Task]
 }
 
-/// Create StubRepository.
+/// Заглушка репозиторий.
 final class TaskRepositoryStub: ITaskRepository {
-	
-	/// Get all tasks.
-	/// - Returns: tasks
-	public func getAll() -> [Task] {
-		
+
+	/// Создаем список всех заданий.
+	/// - Returns: Массив заданий.
+	func getTasks() -> [Task] {
 		var taskList = [Task]()
-		
+
 		for index in 1...9 {
 			let isImportantTask = Bool.random()
-			
+
 			if isImportantTask {
-				taskList.append(
-					ImportantTask(name: "Task №\(index)",
-								  priority: ImportantTask.Priority.allCases.randomElement()!))
+				let priority = ImportantTask.Priority.allCases.randomElement() ?? .low
+				let task = ImportantTask(name: "Task № \(index)", priority: priority)
+				taskList.append(task)
 			} else {
 				taskList.append(RegularTask(name: "Task №\(index)"))
 			}
 		}
-		
+
 		taskList.forEach { task in
 			task.isCompleted = Bool.random()
 		}
-		
+
 		return taskList
 	}
 }
