@@ -5,6 +5,8 @@
 //  Created by Constantin on 15.02.2023.
 //
 
+import TaskManagerPackage
+
 /// Протокол для TaskRepositoryStub.
 protocol ITaskRepository {
 
