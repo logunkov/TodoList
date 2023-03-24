@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TaskManagerPackage
 
 /// Протокол для TodoListPresenter.
 protocol ITodoListPresenter {
@@ -53,6 +54,22 @@ final class TodoListPresenter: ITodoListPresenter {
 		} else {
 			let reularTask = TodoListModel.ViewModel.RegularTask(name: task.name, isDone: task.isCompleted)
 			return .regularTask(reularTask)
+		}
+	}
+}
+
+extension ImportantTask.Priority: CustomStringConvertible {
+
+	/// Строковое представление ImportantTask.
+	public var description: String {
+		switch self {
+
+		case .low:
+			return "!"
+		case .medium:
+			return "!!"
+		case .high:
+			return "!!!"
 		}
 	}
 }
