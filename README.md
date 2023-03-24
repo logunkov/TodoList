@@ -1,14 +1,19 @@
 <div align="center">
-<img src="images/logo.png" alt="ToDoList Logo" width="256" />
-<h1> ToDoList </h1>
+<img src="images/logo.png" alt="TodoList Logo" width="256" />
+<h1> TodoList </h1>
 </div>
-
 
 <p align="justify">Это простое приложение, в котором возможно отмечать выполнение предустановленных задач.</p>
 <p align="justify">Задачи разделяются на простые и сложные, просроченные задачи отмечаются красным цветом.</p>
 
 ## Home Work
-- [x] Добавил swiftlint
+Добавил Unit тесты:
+
+- [x] TaskTests  
+- [x] ImportantTaskTests  
+- [x] TaskManagerTests  
+- [x] OrderedTaskManagerTests  
+- [x] SectionForTaskManagerAdapterTests
 
 ## Getting Started
 
