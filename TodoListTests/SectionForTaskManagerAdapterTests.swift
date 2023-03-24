@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import TaskManagerPackage
 
 final class SectionForTaskManagerAdapterTests: XCTestCase {
 
@@ -51,7 +52,6 @@ final class SectionForTaskManagerAdapterTests: XCTestCase {
 		}
 	}
 
-	// сложный тесть
 	func test_taskSectionAndIndex_shouldReturnFirstCompletedTaskSectionAndIndex() {
 		let sut = makeSUT()
 
