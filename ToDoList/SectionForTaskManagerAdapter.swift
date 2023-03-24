@@ -40,7 +40,7 @@ final class SectionForTaskManagerAdapter: ISectionForTaskManagerAdapter {
 	}
 
 	/// Получение списка секций.
-	/// - Returns: Массив секций
+	/// - Returns: Массив секций.
 	func getSections() -> [Section] {
 		sections
 	}
@@ -60,7 +60,7 @@ final class SectionForTaskManagerAdapter: ISectionForTaskManagerAdapter {
 		return sections[index]
 	}
 
-	/// Получить задания для секциию
+	/// Получить задания для секции.
 	/// - Parameter section: Секция.
 	/// - Returns: Массив заданий.
 	func getTasksForSection(section: Section) -> [Task] {
@@ -72,7 +72,7 @@ final class SectionForTaskManagerAdapter: ISectionForTaskManagerAdapter {
 		}
 	}
 
-	/// Получить задание и номер для секциию
+	/// Получить задание и номер для секции.
 	/// - Parameter task: Задание.
 	/// - Returns: Секция и номер секции.
 	func taskSectionAndIndex(task: Task) -> (section: Section, index: Int)? {
