@@ -41,6 +41,7 @@ opt_in_rules:
 included:
   - TodoList
   - TodoListTests
+  - Framework
 
 # подкаталоги, в которых линтер не будет делать проверку кода
 excluded:
