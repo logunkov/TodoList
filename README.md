@@ -7,13 +7,10 @@
 <p align="justify">Задачи разделяются на простые и сложные, просроченные задачи отмечаются красным цветом.</p>
 
 ## Home Work
-Добавил Unit тесты:
-
-- [x] TaskTests  
-- [x] ImportantTaskTests  
-- [x] TaskManagerTests  
-- [x] OrderedTaskManagerTests  
-- [x] SectionForTaskManagerAdapterTests
+- [x] Создал SPM-пакет:
+- [x] Добавил в SPM-пакет BusinessLogic.
+- [x] Добавил в SPM-пакет тесты для BusinessLogic.
+- [x] Подключил SPM-пакет в приложении.
 
 ## Getting Started
 

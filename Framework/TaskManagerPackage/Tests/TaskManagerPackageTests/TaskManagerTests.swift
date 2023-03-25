@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import TaskManagerPackage
 
 final class TaskManagerTests: XCTestCase {
 

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import TaskManagerPackage
 
 /// Протокол для TodoListPresenter.
 protocol ITodoListPresenter {
@@ -46,13 +47,29 @@ final class TodoListPresenter: ITodoListPresenter {
 				name: task.name,
 				isDone: task.isCompleted,
 				isOverdue: task.deadLine < Date(),
-				deadLine: "Deadline: \(task.deadLine)",
+				deadLine: "Deadline: \(task.deadLine.formatted(.iso8601 .month().day().year()))",
 				priority: "\(task.taskPriority)"
 			)
 			return .importantTask(importantTask)
 		} else {
 			let reularTask = TodoListModel.ViewModel.RegularTask(name: task.name, isDone: task.isCompleted)
 			return .regularTask(reularTask)
+		}
+	}
+}
+
+extension ImportantTask.Priority: CustomStringConvertible {
+
+	/// Строковое представление ImportantTask.
+	public var description: String {
+		switch self {
+
+		case .low:
+			return "!"
+		case .medium:
+			return "!!"
+		case .high:
+			return "!!!"
 		}
 	}
 }

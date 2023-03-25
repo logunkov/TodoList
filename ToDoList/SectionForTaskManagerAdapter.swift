@@ -5,6 +5,8 @@
 //  Created by Constantin on 18.02.2023.
 //
 
+import TaskManagerPackage
+
 /// Протокол для SectionForTaskManagerAdapter.
 protocol ISectionForTaskManagerAdapter {
 	func getSections() -> [Section]

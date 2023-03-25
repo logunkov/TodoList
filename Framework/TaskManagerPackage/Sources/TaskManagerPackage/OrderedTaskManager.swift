@@ -6,41 +6,41 @@
 //
 
 /// Предоставляет список заданий, отсортированных по приоритету.
-final class OrderedTaskManager: ITaskManager {
+public final class OrderedTaskManager: ITaskManager {
 
-	let taskManager: ITaskManager
+	private let taskManager: ITaskManager
 
-	init(taskManager: ITaskManager) {
+	public init(taskManager: ITaskManager) {
 		self.taskManager = taskManager
 	}
 
 	/// Список всех заданий.
 	/// - Returns: Массив заданий.
-	func allTasks() -> [Task] {
+	public func allTasks() -> [Task] {
 		sorted(tasks: taskManager.allTasks())
 	}
 
 	/// Список выполненных заданий.
 	/// - Returns: Массив заданий.
-	func completedTasks() -> [Task] {
+	public func completedTasks() -> [Task] {
 		sorted(tasks: taskManager.completedTasks())
 	}
 
 	/// Список заданий для выполнения.
 	/// - Returns: Массив заданий.
-	func uncompletedTasks() -> [Task] {
+	public func uncompletedTasks() -> [Task] {
 		sorted(tasks: taskManager.uncompletedTasks())
 	}
 
 	/// Добавление перечня заданий.
 	/// - Parameter task: Задание.
-	func addTask(task: Task) {
+	public func addTask(task: Task) {
 		taskManager.addTask(task: task)
 	}
 
 	/// Добавление перечня заданий.
 	/// - Parameter tasks: Массив заданий.
-	func addTasks(tasks: [Task]) {
+	public func addTasks(tasks: [Task]) {
 		taskManager.addTasks(tasks: tasks)
 	}
 

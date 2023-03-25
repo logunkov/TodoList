@@ -8,28 +8,32 @@
 import Foundation
 
 /// Задание, для ведения списка дел.
-class Task {
+public class Task {
 
 	/// Наименование задания.
-	let name: String
+	public let name: String
 
 	/// Состояние задания -- выполнено ли задание.
-	var isCompleted: Bool
+	public var isCompleted: Bool
 
-	init (name: String, isCompleted: Bool = false) {
+	/// Задание.
+	/// - Parameters:
+	///   - name: Название задания.
+	///   - isCompleted: выполнено задание?
+	public init (name: String, isCompleted: Bool = false) {
 		self.name = name
 		self.isCompleted = isCompleted
 	}
 }
 
 /// Обычное задание.
-final class RegularTask: Task {}
+public final class RegularTask: Task {}
 
 /// Важное задание с приоритетом.
-final class ImportantTask: Task {
+public final class ImportantTask: Task {
 
 	/// Приоритет задания. Приоритет влияет на крайний срок выполнения задания.
-	enum Priority: Int, CaseIterable {
+	public enum Priority: Int, CaseIterable {
 		/// Низкий приоритет. На выполнение задания с низким приоритетом, отводится 3 дня.
 		case low
 		/// Средний приоритет. На выполнение задания со средним приоритетом, отводится 2 дня.
@@ -41,10 +45,10 @@ final class ImportantTask: Task {
 	private let createDate: Date
 
 	/// Приоритет задания.
-	var taskPriority: Priority
+	public var taskPriority: Priority
 
 	/// Крайний срок выполнения задания.
-	var deadLine: Date {
+	public var deadLine: Date {
 		let today = Date()
 		switch taskPriority {
 		case .low:
@@ -56,7 +60,7 @@ final class ImportantTask: Task {
 		}
 	}
 
-	init(name: String, priority: Priority, createDate: Date = Date()) {
+	public init(name: String, priority: Priority, createDate: Date = Date()) {
 		self.taskPriority = priority
 		self.createDate = createDate
 		super.init(name: name)

@@ -6,43 +6,49 @@
 //
 
 //// Предоставляет список заданий.
-final class TaskManager {
+public final class TaskManager {
 
 	private var taskList = [Task]()
 
+	/// Менеджер заданий
+	/// - Parameter taskList: Массив заданий.
+	public init(taskList: [Task] = [Task]()) {
+		self.taskList = taskList
+	}
+
 	/// Список всех заданий.
 	/// - Returns: Массив заданий.
-	func allTasks() -> [Task] {
+	public func allTasks() -> [Task] {
 		taskList
 	}
 
 	/// Список выполненных заданий.
 	/// - Returns: Массив заданий.
-	func completedTasks() -> [Task] {
+	public func completedTasks() -> [Task] {
 		taskList.filter { $0.isCompleted }
 	}
 
 	/// Список заданий для выполнения.
 	/// - Returns: Массив заданий.
-	func uncompletedTasks() -> [Task] {
+	public func uncompletedTasks() -> [Task] {
 		taskList.filter { !$0.isCompleted }
 	}
 
 	/// Добавление нового задания.
 	/// - Parameter task: Задание.
-	func addTask(task: Task) {
+	public func addTask(task: Task) {
 		taskList.append(task)
 	}
 
 	/// Добавление перечня заданий.
 	/// - Parameter tasks: Массив заданий.
-	func addTasks(tasks: [Task]) {
+	public func addTasks(tasks: [Task]) {
 		taskList.append(contentsOf: tasks)
 	}
 
 	/// Удаление задания из списка. При вызове метода будут удалены все варианты этого задания по идентичности Task.
 	/// - Parameter task: Задание, которое необходимо удалить.
-	func removeTask(task: Task) {
+	public func removeTask(task: Task) {
 		taskList.removeAll { $0 === task }
 	}
 }

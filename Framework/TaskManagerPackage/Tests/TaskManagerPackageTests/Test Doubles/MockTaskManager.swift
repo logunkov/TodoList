@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import TaskManagerPackage
 
 final class MockTaskManager: ITaskManager {
 	static let highImportantTask = ImportantTask(name: "highImportantTask", priority: .high)
