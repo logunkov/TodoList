@@ -47,7 +47,7 @@ final class TodoListPresenter: ITodoListPresenter {
 				name: task.name,
 				isDone: task.isCompleted,
 				isOverdue: task.deadLine < Date(),
-				deadLine: "Deadline: \(task.deadLine)",
+				deadLine: "Deadline: \(task.deadLine.formatted(.iso8601 .month().day().year()))",
 				priority: "\(task.taskPriority)"
 			)
 			return .importantTask(importantTask)
