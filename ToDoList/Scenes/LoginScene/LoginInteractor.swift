@@ -26,8 +26,8 @@ final class LoginInteractor: ILoginInteractor {
 	/// Запрос на вход в систему.
 	func login(request: LoginModels.Request) {
 		let result = worker.login(login: request.login, password: request.password)
-		let responce = LoginModels.Responce(success: result)
+		let response = LoginModels.Response(success: result)
 
-		presenter?.present(responce: responce)
+		presenter?.present(response: response)
 	}
 }
