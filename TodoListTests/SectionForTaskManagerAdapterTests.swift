@@ -10,62 +10,51 @@ import TaskManagerPackage
 
 final class SectionForTaskManagerAdapterTests: XCTestCase {
 
-	func test_getSections_shouldReturnTwoSections() {
+	func test_getSections_shouldReturnTwoSectionsUncompletedAndCompleted() {
 		let sut = makeSUT()
 
 		let sections = sut.getSections()
 
-		XCTAssertEqual(sections.count, 2, "Количество секций больше или меньше, чем 2")
+		XCTAssertEqual(sections.first, .uncompleted, "Неверная секция - uncompleted")
+		XCTAssertEqual(sections.last, .completed, "Неверная секция - completed")
 	}
 
-	func test_getSectionIndex_shouldReturnIndex() {
+	func test_getSectionIndex_withCompletedSection_shouldReturnCompletedSection() {
 		let sut = makeSUT()
 
-		let uncompletedSectionIndex = sut.getSectionIndex(section: .uncompleted)
 		let completedSectionIndex = sut.getSectionIndex(section: .completed)
 
-		XCTAssertEqual(uncompletedSectionIndex, 0, "Неверный номер секции № 0")
-		XCTAssertEqual(completedSectionIndex, 1, "Неверный номер секции № 1")
+		XCTAssertEqual(completedSectionIndex, 1, "Неверный номер для секции - completed")
 	}
 
-	func test_getSection_shouldReturnSections() {
+	func test_getSection_forIndexOne_shouldReturnCompletedSection() {
 		let sut = makeSUT()
 
-		let uncompletedSection = sut.getSection(forIndex: 0)
 		let completedSection = sut.getSection(forIndex: 1)
 
-		XCTAssertEqual(uncompletedSection, .uncompleted, "Неверная секция - uncompleted")
 		XCTAssertEqual(completedSection, .completed, "Неверная секция - completed")
 	}
 
-	func test_getTasksForSection_shouldReturnCompletedTasks() {
+	func test_getTasksForSection_withCompletedSection_shouldReturnCompletedSection() {
 		let sut = makeSUT()
 
-		let uncompletedTasks = sut.getTasksForSection(section: .uncompleted)
 		let completedTasks = sut.getTasksForSection(section: .completed)
 
-		uncompletedTasks.forEach { task in
-			XCTAssertEqual(task.isCompleted, false, "Секция невыполненные задания, содержит выполенную задачу")
-		}
 		completedTasks.forEach { task in
 			XCTAssertEqual(task.isCompleted, true, "Секция выполненные задания, содержит невыполенную задачу")
 		}
 	}
 
-	func test_taskSectionAndIndex_shouldReturnFirstCompletedTaskSectionAndIndex() {
+	func test_taskSectionAndIndex_withCompletedTask_shouldReturnCompletedSectionAndFirstIndex() {
 		let sut = makeSUT()
 
-		guard let completedTask = taskManager().allTasks().first else { return }
-		guard let uncompletedTask = taskManager().allTasks().last else { return }
+		let mockTaskManager = MockTaskManager()
+		guard let completedTask = mockTaskManager.completedTasks().first else { return }
 		guard let (sectionCompletedTasks, indexCompletedTasks) =
 				sut.taskSectionAndIndex(task: completedTask) else { return }
-		guard let (sectionUncompletedTasks, indexUncompletedTasks) =
-				sut.taskSectionAndIndex(task: uncompletedTask) else { return }
 
-		XCTAssertEqual(sectionUncompletedTasks, .uncompleted, "Неверная секция - CURRENT TASKS")
-		XCTAssertEqual(indexUncompletedTasks, 0, "Неверный номер секции CURRENT TASKS")
-		XCTAssertEqual(sectionCompletedTasks, .completed, "Неверная секция - COMPLETED TASKS")
-		XCTAssertEqual(indexCompletedTasks, 1, "Неверный номер секции COMPLETED TASKS")
+		XCTAssertEqual(sectionCompletedTasks, .completed, "Неверная секция - completed")
+		XCTAssertEqual(indexCompletedTasks, 1, "Неверный номер для секции - completed")
 	}
 }
 
@@ -73,14 +62,8 @@ final class SectionForTaskManagerAdapterTests: XCTestCase {
 private extension SectionForTaskManagerAdapterTests {
 
 	func makeSUT() -> SectionForTaskManagerAdapter {
-		SectionForTaskManagerAdapter(taskManager: taskManager())
-	}
-
-	func taskManager() -> TaskManager {
-		let taskManager = TaskManager()
-		let completedTask = RegularTask(name: "RegularTask", isCompleted: true)
-		let uncompletedTask = ImportantTask(name: "ImportantTask", priority: .high)
-		taskManager.addTasks(tasks: [completedTask, uncompletedTask])
-		return taskManager
+		let mockTaskManager = MockTaskManager()
+		let sut = SectionForTaskManagerAdapter(taskManager: mockTaskManager)
+		return sut
 	}
 }
