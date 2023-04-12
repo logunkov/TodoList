@@ -17,7 +17,6 @@
 		BD25263A29E694E600EF6AF4 /* TodoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398629A63108002C5537 /* TodoListInteractor.swift */; };
 		BD25263B29E6950B00EF6AF4 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5C62AB29A50A7100902D82 /* TodoListModel.swift */; };
 		BD25263D29E6952500EF6AF4 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CD4B92998B1A9007906E6 /* TodoListViewController.swift */; };
-		BD25263E29E6952F00EF6AF4 /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CD4CE2998BD84007906E6 /* ToDoListCell.swift */; };
 		BD25263F29E699BE00EF6AF4 /* TodoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D1CF429A105A400243114 /* TodoListPresenter.swift */; };
 		BD25264229E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25264129E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift */; };
 		BD25A4D029B7749F00ACD5B4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25A4CF29B7749F00ACD5B4 /* LoginRouter.swift */; };
@@ -33,8 +32,6 @@
 		BD4CD4BA2998B1A9007906E6 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CD4B92998B1A9007906E6 /* TodoListViewController.swift */; };
 		BD4CD4BF2998B1AB007906E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4CD4BE2998B1AB007906E6 /* Assets.xcassets */; };
 		BD4CD4C22998B1AB007906E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4CD4C02998B1AB007906E6 /* LaunchScreen.storyboard */; };
-		BD4CD4CF2998BD84007906E6 /* ToDoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CD4CE2998BD84007906E6 /* ToDoListCell.swift */; };
-		BD4E3D3329A6102F00D48578 /* LoginScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4E3D3229A6102F00D48578 /* LoginScene.storyboard */; };
 		BD5520DE29E65CDD009501B0 /* TodoListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520DD29E65CDD009501B0 /* TodoListPresenterTests.swift */; };
 		BD5520E229E65D0F009501B0 /* TodoListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E129E65D0F009501B0 /* TodoListViewControllerTests.swift */; };
 		BD5520E429E65D1E009501B0 /* TodoListPresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E329E65D1E009501B0 /* TodoListPresenterSpy.swift */; };
@@ -42,8 +39,24 @@
 		BD5520E829E65D39009501B0 /* TodoListInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E729E65D39009501B0 /* TodoListInteractorSpy.swift */; };
 		BD5520EA29E65D43009501B0 /* TodoListTableViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E929E65D43009501B0 /* TodoListTableViewSpy.swift */; };
 		BD5C62AC29A50A7100902D82 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5C62AB29A50A7100902D82 /* TodoListModel.swift */; };
+		BD8A780F29E6B83E00CF422E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25A4CF29B7749F00ACD5B4 /* LoginRouter.swift */; };
+		BD8A781029E6B85100CF422E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0397E29A61EE1002C5537 /* LoginInteractor.swift */; };
+		BD8A781129E6B86300CF422E /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398229A61EFC002C5537 /* LoginModels.swift */; };
+		BD8A781229E6B9BF00CF422E /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398429A61F0B002C5537 /* LoginWorker.swift */; };
+		BD8A781329E6B9CF00CF422E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398029A61EEE002C5537 /* LoginPresenter.swift */; };
+		BD8A781429E6BA1700CF422E /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */; };
+		BD8A781529E6BA2400CF422E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9829E6AEB50039E0CD /* Sizes.swift */; };
+		BD8A781629E6BA3900CF422E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9329E6ADA10039E0CD /* UIView+Extensions.swift */; };
 		BDB4748B29BB873500C30295 /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4748A29BB873500C30295 /* LoginAssembler.swift */; };
 		BDB4748D29BB8C0B00C30295 /* TodoListAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4748C29BB8C0B00C30295 /* TodoListAssembler.swift */; };
+		BDBF9B9029E6AD080039E0CD /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = BDBF9B8F29E6AD080039E0CD /* PinLayout */; };
+		BDBF9B9229E6AD780039E0CD /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */; };
+		BDBF9B9429E6ADA10039E0CD /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9329E6ADA10039E0CD /* UIView+Extensions.swift */; };
+		BDBF9B9629E6AE310039E0CD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9529E6AE310039E0CD /* LoginView.swift */; };
+		BDBF9B9929E6AEB50039E0CD /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9829E6AEB50039E0CD /* Sizes.swift */; };
+		BDBF9B9B29E6B1420039E0CD /* LoginViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9A29E6B1420039E0CD /* LoginViewSpy.swift */; };
+		BDBF9B9C29E6B1660039E0CD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBF9B9529E6AE310039E0CD /* LoginView.swift */; };
+		BDBF9B9D29E6B3500039E0CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0397C29A61EB6002C5537 /* LoginViewController.swift */; };
 		BDD0397D29A61EB6002C5537 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0397C29A61EB6002C5537 /* LoginViewController.swift */; };
 		BDD0397F29A61EE1002C5537 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0397E29A61EE1002C5537 /* LoginInteractor.swift */; };
 		BDD0398129A61EEE002C5537 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398029A61EEE002C5537 /* LoginPresenter.swift */; };
@@ -87,8 +100,6 @@
 		BD4CD4BE2998B1AB007906E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD4CD4C12998B1AB007906E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD4CD4C32998B1AB007906E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD4CD4CE2998BD84007906E6 /* ToDoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListCell.swift; sourceTree = "<group>"; };
-		BD4E3D3229A6102F00D48578 /* LoginScene.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScene.storyboard; sourceTree = "<group>"; };
 		BD5520DD29E65CDD009501B0 /* TodoListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenterTests.swift; sourceTree = "<group>"; };
 		BD5520E129E65D0F009501B0 /* TodoListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewControllerTests.swift; sourceTree = "<group>"; };
 		BD5520E329E65D1E009501B0 /* TodoListPresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListPresenterSpy.swift; sourceTree = "<group>"; };
@@ -98,6 +109,11 @@
 		BD5C62AB29A50A7100902D82 /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
 		BDB4748A29BB873500C30295 /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
 		BDB4748C29BB8C0B00C30295 /* TodoListAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAssembler.swift; sourceTree = "<group>"; };
+		BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
+		BDBF9B9329E6ADA10039E0CD /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		BDBF9B9529E6AE310039E0CD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BDBF9B9829E6AEB50039E0CD /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		BDBF9B9A29E6B1420039E0CD /* LoginViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewSpy.swift; sourceTree = "<group>"; };
 		BDD0397C29A61EB6002C5537 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BDD0397E29A61EE1002C5537 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		BDD0398029A61EEE002C5537 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -114,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDBF9B9029E6AD080039E0CD /* PinLayout in Frameworks */,
 				BD012E5829D3DC5600BF24F6 /* TaskManagerPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				BD25264129E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift */,
+				BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */,
+				BDBF9B9329E6ADA10039E0CD /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -172,6 +191,7 @@
 				BD2C1F3429D152380066FB7E /* LoginWorkerSpy.swift */,
 				BD2C1F3629D152450066FB7E /* LoginInteractorSpy.swift */,
 				BD2C1F3829D1524F0066FB7E /* LoginViewControllerSpy.swift */,
+				BDBF9B9A29E6B1420039E0CD /* LoginViewSpy.swift */,
 			);
 			path = "Test Doubles";
 			sourceTree = "<group>";
@@ -206,6 +226,7 @@
 				BD4CD4CC2998BCC3007906E6 /* Services */,
 				BD5C62AD29A50D0B00902D82 /* Scenes */,
 				BDA934C029C4788F002B52AB /* Resources */,
+				BDBF9B9729E6AE9C0039E0CD /* Theme */,
 				BD25264029E69C3000EF6AF4 /* Extensions */,
 			);
 			path = ToDoList;
@@ -227,7 +248,6 @@
 				BDD0398629A63108002C5537 /* TodoListInteractor.swift */,
 				BD1D1CF429A105A400243114 /* TodoListPresenter.swift */,
 				BD5C62AB29A50A7100902D82 /* TodoListModel.swift */,
-				BD4CD4CE2998BD84007906E6 /* ToDoListCell.swift */,
 				BDB4748C29BB8C0B00C30295 /* TodoListAssembler.swift */,
 			);
 			path = TodoListScene;
@@ -236,7 +256,6 @@
 		BD4E3D3129A60FFF00D48578 /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
-				BD4E3D3229A6102F00D48578 /* LoginScene.storyboard */,
 				BDD0397C29A61EB6002C5537 /* LoginViewController.swift */,
 				BDD0397E29A61EE1002C5537 /* LoginInteractor.swift */,
 				BDD0398029A61EEE002C5537 /* LoginPresenter.swift */,
@@ -244,6 +263,7 @@
 				BDD0398429A61F0B002C5537 /* LoginWorker.swift */,
 				BD25A4CF29B7749F00ACD5B4 /* LoginRouter.swift */,
 				BDB4748A29BB873500C30295 /* LoginAssembler.swift */,
+				BDBF9B9529E6AE310039E0CD /* LoginView.swift */,
 			);
 			path = LoginScene;
 			sourceTree = "<group>";
@@ -303,6 +323,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		BDBF9B9729E6AE9C0039E0CD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BDBF9B9829E6AEB50039E0CD /* Sizes.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		BDD8FE0929C48AFE0013941A /* TodoListTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -339,6 +367,7 @@
 			name = TodoList;
 			packageProductDependencies = (
 				BD012E5729D3DC5600BF24F6 /* TaskManagerPackage */,
+				BDBF9B8F29E6AD080039E0CD /* PinLayout */,
 			);
 			productName = "LogunkovHW 1.4";
 			productReference = BD4CD4B22998B1A9007906E6 /* TodoList.app */;
@@ -391,6 +420,9 @@
 				Base,
 			);
 			mainGroup = BD4CD4A92998B1A9007906E6;
+			packageReferences = (
+				BDBF9B8E29E6AD080039E0CD /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = BD4CD4B32998B1A9007906E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,7 +441,6 @@
 				BD4CD4C22998B1AB007906E6 /* LaunchScreen.storyboard in Resources */,
 				BD4CD4BF2998B1AB007906E6 /* Assets.xcassets in Resources */,
 				BD012E5429D3DA9100BF24F6 /* README.md in Resources */,
-				BD4E3D3329A6102F00D48578 /* LoginScene.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,21 +482,24 @@
 			files = (
 				BD13136C299C9B60002FFA4F /* Repository.swift in Sources */,
 				BDD0397F29A61EE1002C5537 /* LoginInteractor.swift in Sources */,
+				BDBF9B9429E6ADA10039E0CD /* UIView+Extensions.swift in Sources */,
 				BDD0398529A61F0B002C5537 /* LoginWorker.swift in Sources */,
+				BDBF9B9229E6AD780039E0CD /* UIViewController+Preview.swift in Sources */,
 				BD1D1CF329A0DE2500243114 /* SectionForTaskManagerAdapter.swift in Sources */,
 				BDB4748D29BB8C0B00C30295 /* TodoListAssembler.swift in Sources */,
 				BD1D1CF529A105A400243114 /* TodoListPresenter.swift in Sources */,
 				BDD0398729A63108002C5537 /* TodoListInteractor.swift in Sources */,
 				BD4CD4BA2998B1A9007906E6 /* TodoListViewController.swift in Sources */,
-				BD4CD4CF2998BD84007906E6 /* ToDoListCell.swift in Sources */,
 				BD4CD4B62998B1A9007906E6 /* AppDelegate.swift in Sources */,
 				BDD0398329A61EFC002C5537 /* LoginModels.swift in Sources */,
 				BDD0398129A61EEE002C5537 /* LoginPresenter.swift in Sources */,
 				BD5C62AC29A50A7100902D82 /* TodoListModel.swift in Sources */,
+				BDBF9B9629E6AE310039E0CD /* LoginView.swift in Sources */,
 				BDB4748B29BB873500C30295 /* LoginAssembler.swift in Sources */,
 				BD25A4D029B7749F00ACD5B4 /* LoginRouter.swift in Sources */,
 				BDD0397D29A61EB6002C5537 /* LoginViewController.swift in Sources */,
 				BD25264229E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift in Sources */,
+				BDBF9B9929E6AEB50039E0CD /* Sizes.swift in Sources */,
 				BD4CD4B82998B1A9007906E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,27 +508,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8A781429E6BA1700CF422E /* UIViewController+Preview.swift in Sources */,
 				BD2C1F3D29D152680066FB7E /* LoginViewControllerTests.swift in Sources */,
 				BD5520EA29E65D43009501B0 /* TodoListTableViewSpy.swift in Sources */,
 				BDF531C929D05B4A001D8955 /* MockTaskManager.swift in Sources */,
 				BD25263B29E6950B00EF6AF4 /* TodoListModel.swift in Sources */,
 				BD5520DE29E65CDD009501B0 /* TodoListPresenterTests.swift in Sources */,
 				BD5520E429E65D1E009501B0 /* TodoListPresenterSpy.swift in Sources */,
+				BDBF9B9C29E6B1660039E0CD /* LoginView.swift in Sources */,
+				BD8A781229E6B9BF00CF422E /* LoginWorker.swift in Sources */,
 				BD2C1F3529D152380066FB7E /* LoginWorkerSpy.swift in Sources */,
-				BD25263E29E6952F00EF6AF4 /* ToDoListCell.swift in Sources */,
+				BD8A781129E6B86300CF422E /* LoginModels.swift in Sources */,
 				BD2C1F3F29D152730066FB7E /* LoginPresenterTests.swift in Sources */,
 				BD2C1F3729D152450066FB7E /* LoginInteractorSpy.swift in Sources */,
+				BDBF9B9B29E6B1420039E0CD /* LoginViewSpy.swift in Sources */,
 				BD2C1F3B29D1525D0066FB7E /* LoginInteractorTests.swift in Sources */,
+				BDBF9B9D29E6B3500039E0CD /* LoginViewController.swift in Sources */,
 				BDD8FE1929C7505B0013941A /* SectionForTaskManagerAdapterTests.swift in Sources */,
 				BD2C1F3329D152280066FB7E /* LoginPresenterSpy.swift in Sources */,
 				BD5520E629E65D2D009501B0 /* TodoListViewControllerSpy.swift in Sources */,
+				BD8A781529E6BA2400CF422E /* Sizes.swift in Sources */,
+				BD8A781629E6BA3900CF422E /* UIView+Extensions.swift in Sources */,
+				BD8A781029E6B85100CF422E /* LoginInteractor.swift in Sources */,
 				BD5520E229E65D0F009501B0 /* TodoListViewControllerTests.swift in Sources */,
 				BD25263D29E6952500EF6AF4 /* TodoListViewController.swift in Sources */,
 				BD25263F29E699BE00EF6AF4 /* TodoListPresenter.swift in Sources */,
 				BD25262429E6885E00EF6AF4 /* TodoListInteractorTests.swift in Sources */,
+				BD8A781329E6B9CF00CF422E /* LoginPresenter.swift in Sources */,
 				BD2C1F3929D1524F0066FB7E /* LoginViewControllerSpy.swift in Sources */,
 				BD5520E829E65D39009501B0 /* TodoListInteractorSpy.swift in Sources */,
 				BD25263A29E694E600EF6AF4 /* TodoListInteractor.swift in Sources */,
+				BD8A780F29E6B83E00CF422E /* LoginRouter.swift in Sources */,
 				BD25263929E6945000EF6AF4 /* SectionForTaskManagerAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,10 +832,26 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		BDBF9B8E29E6AD080039E0CD /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		BD012E5729D3DC5600BF24F6 /* TaskManagerPackage */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TaskManagerPackage;
+		};
+		BDBF9B8F29E6AD080039E0CD /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDBF9B8E29E6AD080039E0CD /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
