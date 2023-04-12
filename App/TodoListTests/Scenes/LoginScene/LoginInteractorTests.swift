@@ -10,8 +10,12 @@ import XCTest
 
 final class LoginInteractorTests: XCTestCase {
 
+	// MARK: - Private Properties
+
 	private let worker = LoginWorkerSpy()
 	private let presenter = LoginPresenterSpy()
+
+	// MARK: - Internal Methods
 
 	func test_login_withValidRequest_shouldLoggedIn() {
 		let sut = makeSut()
@@ -24,7 +28,8 @@ final class LoginInteractorTests: XCTestCase {
 	}
 }
 
-// MARK: - Private
+// MARK: - Private extension
+
 private extension LoginInteractorTests {
 	func makeSut() -> LoginInteractor {
 		LoginInteractor(worker: worker, presenter: presenter)

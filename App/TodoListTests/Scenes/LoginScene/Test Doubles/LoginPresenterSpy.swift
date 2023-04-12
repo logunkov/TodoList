@@ -10,9 +10,11 @@
 final class LoginPresenterSpy: ILoginPresenter {
 
 	// MARK: - Internal Properties
+
 	private(set) var isCalledPresent = false
 
 	// MARK: - Internal Methods
+
 	func present(response: LoginModels.Response) {
 		isCalledPresent = true
 	}

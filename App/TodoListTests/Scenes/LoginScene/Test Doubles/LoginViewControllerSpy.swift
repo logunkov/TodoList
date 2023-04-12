@@ -10,10 +10,12 @@
 class LoginViewControllerSpy: ILoginViewController {
 
 	// MARK: - Internal Properties
+
 	private(set) var isCalledRender = false
 	private(set) var viewModel = false
 
 	// MARK: - Internal Methods
+
 	func render(viewModel: LoginModels.ViewModel) {
 		isCalledRender = true
 

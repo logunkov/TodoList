@@ -10,11 +10,14 @@ import XCTest
 
 final class LoginViewControllerTests: XCTestCase {
 
+	// MARK: - Private Properties
+
 	private var interactor: LoginInteractorSpy! // swiftlint:disable:this implicitly_unwrapped_optional
 	private var window: UIWindow! // swiftlint:disable:this implicitly_unwrapped_optional
 	private var sut: LoginViewController! // swiftlint:disable:this implicitly_unwrapped_optional
 
 	// MARK: - Lifecycle
+
 	override func setUp() {
 		super.setUp()
 
@@ -35,7 +38,8 @@ final class LoginViewControllerTests: XCTestCase {
 		super.tearDown()
 	}
 
-	// MARK: - Public Methods
+	// MARK: - Internal Methods
+
 	func test_render_withValidRequest_shouldLoggedIn() {
 		sut.loginText = "validEmail"
 		sut.passText = "validPass"
