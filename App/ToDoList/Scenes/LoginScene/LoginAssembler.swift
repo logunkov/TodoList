@@ -12,10 +12,8 @@ final class LoginAssembler {
 
 	/// Сборка.
 	func assembly() -> UIViewController {
-		let storyBoard = UIStoryboard(name: "LoginScene", bundle: Bundle.main)
-		guard let viewController = storyBoard.instantiateViewController(withIdentifier: "LoginScene") as? LoginViewController
-		else {fatalError("Not found Maim.storyboard LoginViewController")
-		}
+		let view = LoginView()
+		let viewController = LoginViewController(mainView: view)
 
 		let presenter = LoginPresenter(viewController: viewController)
 		let worker = LoginWorker()
