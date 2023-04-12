@@ -98,7 +98,8 @@ final class TaskManagerTests: XCTestCase {
 	}
 }
 
-// MARK: - Private
+// MARK: - Private extension
+
 private extension TaskManagerTests {
 
 	func makeSut() -> TaskManager {

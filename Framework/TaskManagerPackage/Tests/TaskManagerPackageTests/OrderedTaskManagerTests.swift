@@ -68,7 +68,8 @@ final class OrderedTaskManagerTests: XCTestCase {
 	}
 }
 
-// MARK: - Private
+// MARK: - Private extension
+
 private extension OrderedTaskManagerTests {
 
 	func makeSut() -> OrderedTaskManager {

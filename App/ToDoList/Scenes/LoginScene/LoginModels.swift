@@ -16,7 +16,7 @@ enum LoginModels {
 	}
 
 	/// Ответ о успешной авторизации.
-	struct Responce {
+	struct Response {
 		var success: Bool
 	}
 

@@ -26,7 +26,8 @@ final class TaskTests: XCTestCase {
 	}
 }
 
-// MARK: - Private
+// MARK: - Private extension
+
 private extension TaskTests {
 
 	func makeSut() -> Task {

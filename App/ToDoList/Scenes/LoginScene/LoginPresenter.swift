@@ -7,7 +7,7 @@
 
 /// Протокол для LoginPresenter.
 protocol ILoginPresenter {
-	func present(responce: LoginModels.Responce)
+	func present(response: LoginModels.Response)
 }
 
 /// Presenter для Login.
@@ -20,9 +20,9 @@ final class LoginPresenter: ILoginPresenter {
 	}
 
 	/// Ответ входа в систему.
-	/// - Parameter responce: Данные входа в систему.
-	func present(responce: LoginModels.Responce) {
-		let viewModel: LoginModels.ViewModel = responce.success ? .success : .failure("Access denied")
+	/// - Parameter response: Данные входа в систему.
+	func present(response: LoginModels.Response) {
+		let viewModel: LoginModels.ViewModel = response.success ? .success : .failure("Access denied")
 		viewController?.render(viewModel: viewModel)
 	}
 }
