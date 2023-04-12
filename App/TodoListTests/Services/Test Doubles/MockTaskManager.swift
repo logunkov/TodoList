@@ -5,9 +5,8 @@
 //  Created by Constantin on 26.03.2023.
 //
 
-import Foundation
-import XCTest
 @testable import TaskManagerPackage
+@testable import TodoList
 
 final class MockTaskManager: ITaskManager {
 	static let highImportantTask = ImportantTask(name: "highImportantTask", priority: .high)
