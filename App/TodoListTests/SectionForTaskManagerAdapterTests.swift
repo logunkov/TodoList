@@ -53,15 +53,12 @@ final class SectionForTaskManagerAdapterTests: XCTestCase {
 		guard let (sectionCompletedTasks, indexCompletedTasks) =
 				sut.taskSectionAndIndex(task: completedTask) else { return }
 
-		XCTAssertTrue(
-			(sectionCompletedTasks, indexCompletedTasks) == (.completed, 1),
-			"Неверная секция или номер для секции - completed"
-		)
+		XCTAssertEqual(sectionCompletedTasks, .completed, "Неверная секция - completed")
+		XCTAssertEqual(indexCompletedTasks, 1, "Неверный номер для секции - completed")
 	}
 }
 
-// MARK: - Private extension
-
+// MARK: - Private
 private extension SectionForTaskManagerAdapterTests {
 
 	func makeSUT() -> SectionForTaskManagerAdapter {
