@@ -53,7 +53,7 @@ final class LoginView: UIView, ILoginView {
 
 	init() {
 		super.init(frame: .zero)
-		backgroundColor = .white
+		backgroundColor = Theme.backgroundColor
 		setupUI()
 	}
 
@@ -86,21 +86,21 @@ extension LoginView {
 		let imageView = UIImageView()
 		imageView.contentMode = .scaleAspectFit
 		// swiftlint:disable:next image_name_initialization
-		imageView.image = UIImage(named: "icon")
+		imageView.image = UIImage(named: Asset.icon.name)
 		imageView.accessibilityIdentifier = AccessibilityIdentifier.loginIconImageView.rawValue
 		return imageView
 	}
 
 	private func createLoginTextField() -> UITextField {
 		let textField = createTextField()
-		textField.placeholder = "login"
+		textField.placeholder = L10n.Authorization.login
 		textField.accessibilityIdentifier = AccessibilityIdentifier.loginTextField.rawValue
 		return textField
 	}
 
 	private func createPasswordTextField() -> UITextField {
 		let textField = createTextField()
-		textField.placeholder = "password"
+		textField.placeholder = L10n.Authorization.password
 		textField.accessibilityIdentifier = AccessibilityIdentifier.passwordTextField.rawValue
 		return textField
 	}
@@ -110,8 +110,8 @@ extension LoginView {
 
 		button.configuration = .filled()
 		button.configuration?.cornerStyle = .medium
-		button.configuration?.baseBackgroundColor = .systemBlue
-		button.configuration?.title = "login"
+		button.configuration?.baseBackgroundColor = Theme.accentColor
+		button.configuration?.title = L10n.Authorization.login
 		button.layer.cornerRadius = Sizes.cornerRadius
 		button.accessibilityIdentifier = AccessibilityIdentifier.loginButton.rawValue
 
@@ -122,8 +122,8 @@ extension LoginView {
 
 	private func createTextField() -> UITextField {
 		let textField = UITextField()
-		textField.backgroundColor = .white
-		textField.textColor = .black
+		textField.backgroundColor = Theme.backgroundColor
+		textField.textColor = Theme.mainColor
 		textField.borderStyle = .roundedRect
 		textField.layer.cornerRadius = Sizes.cornerRadius
 		return textField
