@@ -39,8 +39,8 @@ final class TodoListViewController: UITableViewController {
 	private func setupView() {
 
 		tableView.accessibilityIdentifier = AccessibilityIdentifier.todoListTableView.rawValue
-		tableView.backgroundColor = .systemBlue
-		view.backgroundColor = .systemBlue
+		tableView.backgroundColor = Theme.backgroundColor
+		view.backgroundColor = Theme.backgroundColor
 	}
 
 	private func contentConfigurationCell(
@@ -51,10 +51,10 @@ final class TodoListViewController: UITableViewController {
 
 		if isDone {
 			contentConfiguration.image = UIImage(systemName: "checkmark.circle")
-			contentConfiguration.imageProperties.tintColor = .systemGreen
+			contentConfiguration.imageProperties.tintColor = Theme.mainColor
 		} else {
 			contentConfiguration.image = UIImage(systemName: "circle")
-			contentConfiguration.imageProperties.tintColor = .systemRed
+			contentConfiguration.imageProperties.tintColor = Theme.black
 		}
 
 		return contentConfiguration
@@ -89,10 +89,10 @@ extension TodoListViewController {
 
 	override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
 		guard let header = view as? UITableViewHeaderFooterView else { return }
-		header.textLabel?.textColor = .black
+		header.textLabel?.textColor = Theme.black
 		header.textLabel?.frame = header.bounds
 		header.textLabel?.textAlignment = .center
-		header.contentView.backgroundColor = .systemBlue
+		header.contentView.backgroundColor = Theme.backgroundColor
 	}
 
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -103,13 +103,13 @@ extension TodoListViewController {
 
 		switch taskData {
 		case .importantTask(let task):
-			let redText = [NSAttributedString.Key.foregroundColor: UIColor.red]
+			let redText = [NSAttributedString.Key.foregroundColor: Theme.accentColor]
 			let taskText = NSMutableAttributedString(string: "\(task.priority)", attributes: redText)
 			taskText.append(NSAttributedString(string: task.name))
 
 			contentConfiguration.attributedText = taskText
 			contentConfiguration.secondaryText = task.deadLine
-			contentConfiguration.secondaryTextProperties.color = .black
+			contentConfiguration.secondaryTextProperties.color = Theme.black
 
 			contentConfiguration = contentConfigurationCell(isDone: task.isDone, contentConfiguration: contentConfiguration)
 
@@ -119,10 +119,10 @@ extension TodoListViewController {
 			contentConfiguration = contentConfigurationCell(isDone: task.isDone, contentConfiguration: contentConfiguration)
 		}
 
-		cell.tintColor = .white
+		cell.tintColor = Theme.accentColor
 		contentConfiguration.secondaryTextProperties.font = UIFont.systemFont(ofSize: 16)
 		contentConfiguration.textProperties.font = UIFont.boldSystemFont(ofSize: 19)
-		cell.backgroundColor = .white
+		cell.backgroundColor = Theme.backgroundColor
 		cell.contentConfiguration = contentConfiguration
 
 		return cell

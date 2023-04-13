@@ -39,6 +39,22 @@
 		BD5520E829E65D39009501B0 /* TodoListInteractorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E729E65D39009501B0 /* TodoListInteractorSpy.swift */; };
 		BD5520EA29E65D43009501B0 /* TodoListTableViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5520E929E65D43009501B0 /* TodoListTableViewSpy.swift */; };
 		BD5C62AC29A50A7100902D82 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5C62AB29A50A7100902D82 /* TodoListModel.swift */; };
+		BD72EBE429E70657009577BD /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = BD72EBE329E70657009577BD /* swiftgen.yml */; };
+		BD72EBE729E70671009577BD /* Strings.stencil in Resources */ = {isa = PBXBuildFile; fileRef = BD72EBE529E70671009577BD /* Strings.stencil */; };
+		BD72EBE829E70671009577BD /* Assets.stencil in Resources */ = {isa = PBXBuildFile; fileRef = BD72EBE629E70671009577BD /* Assets.stencil */; };
+		BD72EBEC29E7069F009577BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD72EBEE29E7069F009577BD /* Localizable.strings */; };
+		BD72EBF229E706DE009577BD /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF029E706DE009577BD /* Assets.swift */; };
+		BD72EBF329E706DE009577BD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF129E706DE009577BD /* Strings.swift */; };
+		BD72EBF529E7083E009577BD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF429E7083E009577BD /* UIColor+Hex.swift */; };
+		BD72EBF729E70851009577BD /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF629E70851009577BD /* UIColor+Dynamic.swift */; };
+		BD72EBF929E70866009577BD /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF829E70866009577BD /* Colours.swift */; };
+		BD72EBFC29E7B370009577BD /* UIColorHexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBFB29E7B370009577BD /* UIColorHexTests.swift */; };
+		BD72EBFD29E7B75C009577BD /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF829E70866009577BD /* Colours.swift */; };
+		BD72EBFE29E7B764009577BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD72EBEE29E7069F009577BD /* Localizable.strings */; };
+		BD72EBFF29E7B7F8009577BD /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF429E7083E009577BD /* UIColor+Hex.swift */; };
+		BD72EC0029E7B7FA009577BD /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF629E70851009577BD /* UIColor+Dynamic.swift */; };
+		BD72EC0229E7B82B009577BD /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF029E706DE009577BD /* Assets.swift */; };
+		BD72EC0329E7B82D009577BD /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD72EBF129E706DE009577BD /* Strings.swift */; };
 		BD8A780F29E6B83E00CF422E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25A4CF29B7749F00ACD5B4 /* LoginRouter.swift */; };
 		BD8A781029E6B85100CF422E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0397E29A61EE1002C5537 /* LoginInteractor.swift */; };
 		BD8A781129E6B86300CF422E /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0398229A61EFC002C5537 /* LoginModels.swift */; };
@@ -107,6 +123,19 @@
 		BD5520E729E65D39009501B0 /* TodoListInteractorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListInteractorSpy.swift; sourceTree = "<group>"; };
 		BD5520E929E65D43009501B0 /* TodoListTableViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTableViewSpy.swift; sourceTree = "<group>"; };
 		BD5C62AB29A50A7100902D82 /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
+		BD72EBDE29E702C8009577BD /* swiftgen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = swiftgen.sh; sourceTree = "<group>"; };
+		BD72EBE329E70657009577BD /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swiftgen.yml; path = ToDoList/SwiftGen/swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		BD72EBE529E70671009577BD /* Strings.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Strings.stencil; sourceTree = "<group>"; };
+		BD72EBE629E70671009577BD /* Assets.stencil */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Assets.stencil; sourceTree = "<group>"; };
+		BD72EBE929E70689009577BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BD72EBED29E7069F009577BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD72EBEF29E706A2009577BD /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BD72EBF029E706DE009577BD /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		BD72EBF129E706DE009577BD /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BD72EBF429E7083E009577BD /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		BD72EBF629E70851009577BD /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
+		BD72EBF829E70866009577BD /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		BD72EBFB29E7B370009577BD /* UIColorHexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHexTests.swift; sourceTree = "<group>"; };
 		BDB4748A29BB873500C30295 /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
 		BDB4748C29BB8C0B00C30295 /* TodoListAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListAssembler.swift; sourceTree = "<group>"; };
 		BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
@@ -160,6 +189,8 @@
 				BD25264129E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift */,
 				BDBF9B9129E6AD780039E0CD /* UIViewController+Preview.swift */,
 				BDBF9B9329E6ADA10039E0CD /* UIView+Extensions.swift */,
+				BD72EBF429E7083E009577BD /* UIColor+Hex.swift */,
+				BD72EBF629E70851009577BD /* UIColor+Dynamic.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,10 +253,10 @@
 			children = (
 				BD4CD4B52998B1A9007906E6 /* AppDelegate.swift */,
 				BD4CD4B72998B1A9007906E6 /* SceneDelegate.swift */,
-				BD4CD4C32998B1AB007906E6 /* Info.plist */,
+				BD72EBDB29E70287009577BD /* SwiftGen */,
 				BD4CD4CC2998BCC3007906E6 /* Services */,
 				BD5C62AD29A50D0B00902D82 /* Scenes */,
-				BDA934C029C4788F002B52AB /* Resources */,
+				BDA934C029C4788F002B52AB /* Supporting Files */,
 				BDBF9B9729E6AE9C0039E0CD /* Theme */,
 				BD25264029E69C3000EF6AF4 /* Extensions */,
 			);
@@ -299,6 +330,42 @@
 			path = Scenes;
 			sourceTree = "<group>";
 		};
+		BD72EBDA29E70240009577BD /* Autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				BD72EBF029E706DE009577BD /* Assets.swift */,
+				BD72EBF129E706DE009577BD /* Strings.swift */,
+			);
+			path = Autogenerated;
+			sourceTree = "<group>";
+		};
+		BD72EBDB29E70287009577BD /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				BD72EBE229E70616009577BD /* Templates */,
+				BD72EBDE29E702C8009577BD /* swiftgen.sh */,
+				BD72EBE329E70657009577BD /* swiftgen.yml */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		BD72EBE229E70616009577BD /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				BD72EBE629E70671009577BD /* Assets.stencil */,
+				BD72EBE529E70671009577BD /* Strings.stencil */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		BD72EBFA29E7B362009577BD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD72EBFB29E7B370009577BD /* UIColorHexTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BDA3C61C29CEC8BB00FE68AB /* Packages */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,19 +381,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BDA934C029C4788F002B52AB /* Resources */ = {
+		BDA934C029C4788F002B52AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BD72EBDA29E70240009577BD /* Autogenerated */,
 				BD4CD4C02998B1AB007906E6 /* LaunchScreen.storyboard */,
 				BD4CD4BE2998B1AB007906E6 /* Assets.xcassets */,
+				BD4CD4C32998B1AB007906E6 /* Info.plist */,
+				BD72EBEE29E7069F009577BD /* Localizable.strings */,
 			);
-			path = Resources;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		BDBF9B9729E6AE9C0039E0CD /* Theme */ = {
 			isa = PBXGroup;
 			children = (
 				BDBF9B9829E6AEB50039E0CD /* Sizes.swift */,
+				BD72EBF829E70866009577BD /* Colours.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -334,6 +405,7 @@
 		BDD8FE0929C48AFE0013941A /* TodoListTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD72EBFA29E7B362009577BD /* Extensions */,
 				BD2C1F2F29D151DF0066FB7E /* Scenes */,
 				BD09E42329E650C000299CCE /* Services */,
 			);
@@ -356,6 +428,7 @@
 			buildConfigurationList = BD4CD4C62998B1AB007906E6 /* Build configuration list for PBXNativeTarget "TodoList" */;
 			buildPhases = (
 				BDB4748E29BC377900C30295 /* Run Swiftlint */,
+				BD72EBDF29E702DD009577BD /* Run SwiftGen */,
 				BD4CD4AE2998B1A9007906E6 /* Sources */,
 				BD4CD4AF2998B1A9007906E6 /* Frameworks */,
 				BD4CD4B02998B1A9007906E6 /* Resources */,
@@ -418,6 +491,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = BD4CD4A92998B1A9007906E6;
 			packageReferences = (
@@ -441,6 +515,10 @@
 				BD4CD4C22998B1AB007906E6 /* LaunchScreen.storyboard in Resources */,
 				BD4CD4BF2998B1AB007906E6 /* Assets.xcassets in Resources */,
 				BD012E5429D3DA9100BF24F6 /* README.md in Resources */,
+				BD72EBEC29E7069F009577BD /* Localizable.strings in Resources */,
+				BD72EBE729E70671009577BD /* Strings.stencil in Resources */,
+				BD72EBE429E70657009577BD /* swiftgen.yml in Resources */,
+				BD72EBE829E70671009577BD /* Assets.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,12 +526,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD72EBFE29E7B764009577BD /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		BD72EBDF29E702DD009577BD /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/TodoList/Supporting Files/Autogenerated/Strings.swift",
+				"$(SRCROOT)/TodoList/Supporting Files/Autogenerated/Assets.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ToDoList/SwiftGen/swiftgen.sh\n";
+		};
 		BDB4748E29BC377900C30295 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -483,24 +583,29 @@
 				BD13136C299C9B60002FFA4F /* Repository.swift in Sources */,
 				BDD0397F29A61EE1002C5537 /* LoginInteractor.swift in Sources */,
 				BDBF9B9429E6ADA10039E0CD /* UIView+Extensions.swift in Sources */,
+				BD72EBF929E70866009577BD /* Colours.swift in Sources */,
 				BDD0398529A61F0B002C5537 /* LoginWorker.swift in Sources */,
 				BDBF9B9229E6AD780039E0CD /* UIViewController+Preview.swift in Sources */,
 				BD1D1CF329A0DE2500243114 /* SectionForTaskManagerAdapter.swift in Sources */,
 				BDB4748D29BB8C0B00C30295 /* TodoListAssembler.swift in Sources */,
 				BD1D1CF529A105A400243114 /* TodoListPresenter.swift in Sources */,
 				BDD0398729A63108002C5537 /* TodoListInteractor.swift in Sources */,
+				BD72EBF529E7083E009577BD /* UIColor+Hex.swift in Sources */,
 				BD4CD4BA2998B1A9007906E6 /* TodoListViewController.swift in Sources */,
 				BD4CD4B62998B1A9007906E6 /* AppDelegate.swift in Sources */,
 				BDD0398329A61EFC002C5537 /* LoginModels.swift in Sources */,
+				BD72EBF229E706DE009577BD /* Assets.swift in Sources */,
 				BDD0398129A61EEE002C5537 /* LoginPresenter.swift in Sources */,
 				BD5C62AC29A50A7100902D82 /* TodoListModel.swift in Sources */,
 				BDBF9B9629E6AE310039E0CD /* LoginView.swift in Sources */,
 				BDB4748B29BB873500C30295 /* LoginAssembler.swift in Sources */,
+				BD72EBF729E70851009577BD /* UIColor+Dynamic.swift in Sources */,
 				BD25A4D029B7749F00ACD5B4 /* LoginRouter.swift in Sources */,
 				BDD0397D29A61EB6002C5537 /* LoginViewController.swift in Sources */,
 				BD25264229E69C6100EF6AF4 /* TaskPriority+CustomStringConvertible.swift in Sources */,
 				BDBF9B9929E6AEB50039E0CD /* Sizes.swift in Sources */,
 				BD4CD4B82998B1A9007906E6 /* SceneDelegate.swift in Sources */,
+				BD72EBF329E706DE009577BD /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +618,7 @@
 				BD5520EA29E65D43009501B0 /* TodoListTableViewSpy.swift in Sources */,
 				BDF531C929D05B4A001D8955 /* MockTaskManager.swift in Sources */,
 				BD25263B29E6950B00EF6AF4 /* TodoListModel.swift in Sources */,
+				BD72EBFD29E7B75C009577BD /* Colours.swift in Sources */,
 				BD5520DE29E65CDD009501B0 /* TodoListPresenterTests.swift in Sources */,
 				BD5520E429E65D1E009501B0 /* TodoListPresenterSpy.swift in Sources */,
 				BDBF9B9C29E6B1660039E0CD /* LoginView.swift in Sources */,
@@ -521,19 +627,24 @@
 				BD8A781129E6B86300CF422E /* LoginModels.swift in Sources */,
 				BD2C1F3F29D152730066FB7E /* LoginPresenterTests.swift in Sources */,
 				BD2C1F3729D152450066FB7E /* LoginInteractorSpy.swift in Sources */,
+				BD72EBFF29E7B7F8009577BD /* UIColor+Hex.swift in Sources */,
 				BDBF9B9B29E6B1420039E0CD /* LoginViewSpy.swift in Sources */,
 				BD2C1F3B29D1525D0066FB7E /* LoginInteractorTests.swift in Sources */,
+				BD72EBFC29E7B370009577BD /* UIColorHexTests.swift in Sources */,
 				BDBF9B9D29E6B3500039E0CD /* LoginViewController.swift in Sources */,
 				BDD8FE1929C7505B0013941A /* SectionForTaskManagerAdapterTests.swift in Sources */,
 				BD2C1F3329D152280066FB7E /* LoginPresenterSpy.swift in Sources */,
+				BD72EC0029E7B7FA009577BD /* UIColor+Dynamic.swift in Sources */,
 				BD5520E629E65D2D009501B0 /* TodoListViewControllerSpy.swift in Sources */,
 				BD8A781529E6BA2400CF422E /* Sizes.swift in Sources */,
+				BD72EC0329E7B82D009577BD /* Strings.swift in Sources */,
 				BD8A781629E6BA3900CF422E /* UIView+Extensions.swift in Sources */,
 				BD8A781029E6B85100CF422E /* LoginInteractor.swift in Sources */,
 				BD5520E229E65D0F009501B0 /* TodoListViewControllerTests.swift in Sources */,
 				BD25263D29E6952500EF6AF4 /* TodoListViewController.swift in Sources */,
 				BD25263F29E699BE00EF6AF4 /* TodoListPresenter.swift in Sources */,
 				BD25262429E6885E00EF6AF4 /* TodoListInteractorTests.swift in Sources */,
+				BD72EC0229E7B82B009577BD /* Assets.swift in Sources */,
 				BD8A781329E6B9CF00CF422E /* LoginPresenter.swift in Sources */,
 				BD2C1F3929D1524F0066FB7E /* LoginViewControllerSpy.swift in Sources */,
 				BD5520E829E65D39009501B0 /* TodoListInteractorSpy.swift in Sources */,
@@ -558,8 +669,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				BD4CD4C12998B1AB007906E6 /* Base */,
+				BD72EBE929E70689009577BD /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BD72EBEE29E7069F009577BD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD72EBED29E7069F009577BD /* en */,
+				BD72EBEF29E706A2009577BD /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -569,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -629,6 +751,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -688,7 +811,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LKK2YPD73Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "ToDoList/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -719,7 +842,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LKK2YPD73Z;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = "ToDoList/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
