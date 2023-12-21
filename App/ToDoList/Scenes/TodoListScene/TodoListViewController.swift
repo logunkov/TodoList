@@ -15,12 +15,6 @@ protocol ITodoListViewController: AnyObject {
 /// ViewController для TodoList.
 final class TodoListViewController: UITableViewController {
 
-	// MARK: - Types
-
-	enum AccessibilityIdentifier: String {
-		case todoListTableView
-	}
-
 	// MARK: - Internal Properties
 
 	var viewModel: TodoListModel.ViewModel = TodoListModel.ViewModel(tasksBySections: [])
@@ -38,9 +32,10 @@ final class TodoListViewController: UITableViewController {
 
 	private func setupView() {
 
-		tableView.accessibilityIdentifier = AccessibilityIdentifier.todoListTableView.rawValue
+		tableView.accessibilityIdentifier = AccessibilityIdentifier.TodoListScene.tableView
 		tableView.backgroundColor = Theme.backgroundColor
 		view.backgroundColor = Theme.backgroundColor
+		navigationController?.navigationBar.accessibilityIdentifier = AccessibilityIdentifier.TodoListScene.title
 	}
 
 	private func contentConfigurationCell(
@@ -100,6 +95,11 @@ extension TodoListViewController {
 		let taskData = tasks[indexPath.row]
 		let cell = UITableViewCell()
 		var contentConfiguration = cell.defaultContentConfiguration()
+
+		cell.accessibilityIdentifier = String(
+			format: AccessibilityIdentifier.TodoListScene.cell,
+			arguments: [indexPath.section, indexPath.row]
+		)
 
 		switch taskData {
 		case .importantTask(let task):

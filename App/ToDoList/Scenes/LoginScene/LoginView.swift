@@ -21,15 +21,6 @@ protocol ILoginViewDelegate: AnyObject {
 /// Основная view для `LoginViewController`
 final class LoginView: UIView, ILoginView {
 
-	// MARK: - Types
-
-	enum AccessibilityIdentifier: String {
-		case loginIconImageView
-		case loginTextField
-		case passwordTextField
-		case loginButton
-	}
-
 	// MARK: - Internal Properties
 
 	weak var delegate: ILoginViewDelegate?
@@ -87,21 +78,20 @@ extension LoginView {
 		imageView.contentMode = .scaleAspectFit
 		// swiftlint:disable:next image_name_initialization
 		imageView.image = UIImage(named: Asset.icon.name)
-		imageView.accessibilityIdentifier = AccessibilityIdentifier.loginIconImageView.rawValue
 		return imageView
 	}
 
 	private func createLoginTextField() -> UITextField {
 		let textField = createTextField()
 		textField.placeholder = L10n.Authorization.login
-		textField.accessibilityIdentifier = AccessibilityIdentifier.loginTextField.rawValue
+		textField.accessibilityIdentifier = AccessibilityIdentifier.LoginScene.textFieldLogin
 		return textField
 	}
 
 	private func createPasswordTextField() -> UITextField {
 		let textField = createTextField()
 		textField.placeholder = L10n.Authorization.password
-		textField.accessibilityIdentifier = AccessibilityIdentifier.passwordTextField.rawValue
+		textField.accessibilityIdentifier = AccessibilityIdentifier.LoginScene.textFieldPass
 		return textField
 	}
 
@@ -113,8 +103,7 @@ extension LoginView {
 		button.configuration?.baseBackgroundColor = Theme.accentColor
 		button.configuration?.title = L10n.Authorization.login
 		button.layer.cornerRadius = Sizes.cornerRadius
-		button.accessibilityIdentifier = AccessibilityIdentifier.loginButton.rawValue
-
+		button.accessibilityIdentifier = AccessibilityIdentifier.LoginScene.buttonLogin
 		button.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
 
 		return button

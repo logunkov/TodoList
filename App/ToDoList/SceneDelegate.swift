@@ -36,6 +36,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 			loginViewController.router = router
 		}
 
+		#if DEBUG
+		if ProcessInfo.processInfo.arguments.contains("-launchWithTodoListScene") {
+			return UINavigationController(rootViewController: todoListViewController)
+		}
+		#endif
+
 		return loginViewController
 	}
 }
