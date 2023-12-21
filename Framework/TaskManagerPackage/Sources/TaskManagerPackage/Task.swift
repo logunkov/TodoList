@@ -60,7 +60,7 @@ public final class ImportantTask: Task {
 		}
 	}
 
-	public init(name: String, priority: Priority, createDate: Date = Date()) {
+	public init(name: String, priority: Priority, createDate: Date = Date(), isCompleted: Bool = false) {
 		self.taskPriority = priority
 		self.createDate = createDate
 		super.init(name: name)
