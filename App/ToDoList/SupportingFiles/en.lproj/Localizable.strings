@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  ToDoList
+
+  Created by Constantin on 12.04.2023.
+  
+*/
+
+"Authorization.title" = "Authorization";
+"Authorization.authorization" = "Authorization";
+"Authorization.password" = "Password";
+"Authorization.login" = "Login";
+"Authorization.error" = "Access denied";
+
+"TodoList.title" = "TodoList";
+"TodoList.Section.current" = "CURRENT TASKS";
+"TodoList.Section.complete" = "COMPLETED TASKS";
+"TodoList.Task.deadline" = "Deadline: ";
+
+"Alert.Title.error" = "Error";
+"Alert.Button.Ok" = "OK";

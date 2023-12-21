@@ -33,7 +33,6 @@ final class TodoListViewControllerTests: XCTestCase {
 		sut.render(viewModel: viewModel)
 
 		XCTAssertTrue(tableViewSpy.isCalledReloadData, "Not started tableView.reloadData")
-
 	}
 
 	func test_render_shouldDisplayTasksFromViewModelNumberOfSections() {
@@ -62,7 +61,6 @@ final class TodoListViewControllerTests: XCTestCase {
 			viewModel.tasksBySections[0].tasks.count,
 			"Неверное количество элементов в первой секции"
 		)
-
 	}
 
 	func test_render_shouldDisplayTasksFromViewModelNumberOfRowsOne() {
